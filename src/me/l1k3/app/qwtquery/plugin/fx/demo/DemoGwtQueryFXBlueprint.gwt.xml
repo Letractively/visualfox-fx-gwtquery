@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<inherits name="com.google.gwt.user.User" />
+	<inherits name="me.l1k3.css.framework.blueprint.Blueprint" />
+	<inherits name="me.l1k3.gwtquery.plugin.fx.FX" />
+	<entry-point class="me.l1k3.app.qwtquery.plugin.fx.demo.client.Demo" />
+	<source path="client"/>
+</module>
