@@ -62,53 +62,53 @@ public class Demo implements EntryPoint {
             
             if(counter<2) {
                 FX fx = new FXClip(Direction.HORIZONTAL);
-                $("#info").text(fx.toString());
+                $("#info").text(counter+"/12 "+fx.toString());
                 $("#text").as(FX).animate(fx, 1000).callback(this);
             }
             else 
             if(counter==2) {
                 String currentColor = Core.getComputedStyleProperty($("#text h1").get(0), "backgroundColor");
                 FX fx = new FXHighlight(Color.parse(currentColor), new Color(0,255,0));
-                $("#info").text(fx.toString());
+                $("#info").text(counter+"/12 "+fx.toString());
                 $("#text h1").as(FX).animate(fx, 1000, 2500).callback(this);
             }
             else
             if(counter<5) {
                 FX fx = new FXFade();
-                $("#info").text(fx.toString());
+                $("#info").text(counter+"/12 "+fx.toString());
                 $("#text").as(FX).animate(fx, 1000).callback(this);
             }
             else 
             if(counter==5) {
                 String currentColor = Core.getComputedStyleProperty($("#text h1").get(0), "backgroundColor");
                 FX fx = new FXHighlight(Color.parse(currentColor), new Color(255,0,0));
-                $("#info").text(fx.toString());
+                $("#info").text(counter+"/12 "+fx.toString());
                 $("#text h1").as(FX).animate(fx, 1000, 2500).callback(this);
             }
             else
             if(counter<8) {
                 FX fx = new FXOpen();
-                $("#info").text(fx.toString());
+                $("#info").text(counter+"/12 "+fx.toString());
                 $("#text").as(FX).animate(fx, 1000).callback(this);
             }
             else 
             if(counter==8) {
                 String currentColor = Core.getComputedStyleProperty($("#text h1").get(0), "backgroundColor");
                 FX fx = new FXHighlight(Color.parse(currentColor), new Color(0,0,255));
-                $("#info").text(fx.toString());
+                $("#info").text(counter+"/12 "+fx.toString());
                 $("#text h1").as(FX).animate(fx, 1000, 2500).callback(this);
             }
             else
             if(counter<11) {
                 FX fx = new FXReveal();
-                $("#info").text(fx.toString());
+                $("#info").text(counter+"/12 "+fx.toString());
                 $("#text").as(FX).animate(new FXReveal(), 1000).callback(this);
             }
             else 
             if(counter==11) {
                 String currentColor = Core.getComputedStyleProperty($("#text h1").get(0), "backgroundColor");
                 FX fx = new FXHighlight(Color.parse(currentColor), new Color(255,0,255));
-                $("#info").text(fx.toString());
+                $("#info").text(counter+"/12 "+fx.toString());
                 $("#text h1").as(FX).animate(fx, 1000, 2500).callback(this);
             }
         }

@@ -52,7 +52,7 @@ public class Fx extends GQuery implements Queue, Command {
     
     public Fx fade(double start, double end) {
         if(get(0)!=null)
-        fx(FXFade.range(get(0), start, end));
+        fx(FXFade.smartRange(get(0), start, end));
         
         return this;
     }
