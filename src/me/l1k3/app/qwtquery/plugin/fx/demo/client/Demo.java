@@ -48,7 +48,9 @@ public class Demo implements EntryPoint {
         callback.execute();
         
         //loops
-        $("body").as(FX).animate(new FXLoops(new FXChannel().add(ColorChannel.rangeBackground(new Color(255,255,255), new Color(255,255,0))).setEasing("linear"), FXLoops.INFINITY, 0, true), 5000);
+        FXChannel layer = new FXChannel();
+        layer.add(ColorChannel.rangeBackground(layer.getType(), new Color(255,255,255), new Color(255,255,0)));
+        $("body").as(FX).animate(new FXLoops(layer.setEasing("linear"), FXLoops.INFINITY, 0, true), 5000);
     }
     
     private class FXCallback implements Command {
